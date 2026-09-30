@@ -1,4 +1,4 @@
-Q-Ways — Quantum-Inspired Route Optimization
+**Q-Ways — Quantum-Inspired Route Optimization**
 
 Q-Ways is a logistics route optimization platform that uses Quantum-behaved Particle Swarm Optimization (QPSO) to find efficient delivery routes while considering road networks, traffic, fleet constraints and delivery orders.
 
