@@ -1,42 +1,61 @@
-**Q-Ways — Quantum-Inspired Route Optimization**
+<h1 align="center">Q-Ways</h1>
 
-Q-Ways is a logistics route optimization platform that uses Quantum-behaved Particle Swarm Optimization (QPSO) to find efficient delivery routes while considering road networks, traffic, fleet constraints and delivery orders.
+<h2 align="center">Quantum-Inspired Route Optimization for Smart Logistics</h2>
 
-Features
+<p align="center">
+  <strong>Optimize routes. Adapt to traffic. Improve delivery efficiency.</strong>
+</p>
 
-🚚 Multi-vehicle route optimization
+<p align="center">
+  A logistics optimization platform powered by
+  <strong>Quantum-behaved Particle Swarm Optimization (QPSO)</strong>.
+</p>
 
-⚛️ QPSO-based optimization
+Overview
 
-🗺️ Interactive Leaflet map
+Q-Ways is an intelligent logistics route optimization system designed to generate efficient delivery routes across a road network.
 
-📍 Location and delivery management
+It combines QPSO optimization, traffic conditions, fleet constraints, bulk delivery orders, and real-world travel-time feedback to support smarter route planning.
 
-📦 Bulk order management with CSV import/export
+The project consists of a React frontend and a FastAPI backend.
 
-🚦 Traffic and congestion simulation
+Key Features
 
-⏱️ Expected vs actual travel-time feedback
+⚛️ QPSO Optimization — Quantum-inspired route optimization
 
-💰 Time-based cost impact
+🚚 Fleet Management — Vehicle count and capacity constraints
 
-⚙️ Advanced optimization parameters
+📦 Bulk Orders — Create and manage multiple delivery orders
 
-📊 Convergence and benchmark analysis
+🗺️ Interactive Map — Visualize networks, routes and locations
 
-🔌 FastAPI backend with Swagger API
+🚦 Traffic Simulation — Account for traffic and congestion
+
+⏱️ Time Feedback — Compare expected and actual travel time
+
+💰 Cost Impact — Analyze delay and time-saved effects
+
+⚙️ Advanced Optimization — Configure QPSO parameters
+
+📊 Analytics — View optimization and convergence results
+
+📁 CSV Support — Import/export orders and network data
 
 Tech Stack
 
 Frontend
 
-React + TypeScript + Vite
+React
+
+TypeScript
+
+Vite
+
+Tailwind CSS
 
 Leaflet / React Leaflet
 
 Zustand
-
-Tailwind CSS
 
 Recharts
 
@@ -44,7 +63,9 @@ Backend
 
 Python
 
-FastAPI + Uvicorn
+FastAPI
+
+Uvicorn
 
 NetworkX
 
@@ -60,13 +81,40 @@ Quantum-behaved Particle Swarm Optimization (QPSO)
 
 Nearest-neighbor baseline
 
+Architecture
+
+                    Q-WAYS
+                      │
+        ┌─────────────┴─────────────┐
+        │                           │
+   React Frontend              FastAPI Backend
+        │                           │
+        ├── Map & Routes            ├── QPSO Engine
+        ├── Orders                  ├── Network Processing
+        ├── Traffic                 ├── Constraints
+        ├── Optimizer               └── Results
+        └── Analytics
+
 Project Structure
 
 Q-Ways/
-├── QPSO_Frontend/   # React frontend
-└── QPSO_Backend/    # FastAPI backend
+│
+├── QPSO_Frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── QPSO_Backend/
+│   ├── graph/
+│   ├── optimization/
+│   ├── schemas/
+│   ├── services/
+│   ├── main.py
+│   └── requirements.txt
+│
+└── README.md
 
-Run Locally
+Getting Started
 
 Backend
 
@@ -87,34 +135,42 @@ npm run dev
 
 Frontend: http://localhost:5173
 
-Current Network
+Optimization Flow
 
-The frontend currently uses a Bengaluru synthetic/mock road network by default. Its junction data is stored in:
+Road Network + Delivery Orders
+              ↓
+       Traffic Conditions
+              ↓
+       Fleet Constraints
+              ↓
+          QPSO Engine
+              ↓
+       Optimized Routes
+              ↓
+      Map & Analytics
+              ↓
+    Actual-Time Feedback
+
+Map & Network
+
+The frontend currently uses a Bengaluru synthetic/mock network for the default visualization.
+
+Network data:
 
 QPSO_Frontend/src/api/mock.ts
 
-The interactive map is rendered using Leaflet in:
+Map component:
 
 QPSO_Frontend/src/components/map/MapView.tsx
 
-Workflow
-
-Road Network + Orders
-        ↓
-Traffic & Constraints
-        ↓
-Route Optimization
-        ↓
-Optimized Routes
-        ↓
-Map + Results + Feedback
+The map is rendered using Leaflet with OpenStreetMap tiles.
 
 Status
 
-🚧 Under active development
+🚧 Active Development
 
-The frontend and backend are being integrated for a complete QPSO-powered logistics optimization system.
+Q-Ways is being developed toward a complete end-to-end logistics optimization platform with frontend-backend integration and future re-optimization capabilities.
 
-License
-
-Developed for educational, research, and project-development purposes.
+<p align="center">
+  <strong>Q-Ways — Smarter Routes. Better Logistics.</strong>
+</p>
