@@ -119,9 +119,9 @@ Q-Ways/
 ```
 
 
-Getting Started
+<strong>Getting Started</strong>
 
-Backend
+<strong>Backend</strong>
 
 cd QPSO_Backend
 pip install -r requirements.txt
@@ -130,7 +130,7 @@ uvicorn main:app --reload
 Backend: http://127.0.0.1:8000
 API Docs: http://127.0.0.1:8000/docs
 
-Frontend
+<strong>Frontend</strong>
 
 Open another terminal:
 
@@ -156,15 +156,15 @@ Road Network + Delivery Orders
               ↓
     Actual-Time Feedback
 
-Map & Network
+<strong>Map & Network</strong>
 
 The frontend currently uses a Bengaluru synthetic/mock network for the default visualization.
 
-Network data:
+<strong>Network data:</strong>
 
 QPSO_Frontend/src/api/mock.ts
 
-Map component:
+<strong>Map component:</strong>
 
 QPSO_Frontend/src/components/map/MapView.tsx
 
