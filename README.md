@@ -81,38 +81,43 @@ Quantum-behaved Particle Swarm Optimization (QPSO)
 
 Nearest-neighbor baseline
 
-Architecture
+### Architecture
 
-                    Q-WAYS
-                      │
-        ┌─────────────┴─────────────┐
-        │                           │
-   React Frontend              FastAPI Backend
-        │                           │
-        ├── Map & Routes            ├── QPSO Engine
-        ├── Orders                  ├── Network Processing
-        ├── Traffic                 ├── Constraints
-        ├── Optimizer               └── Results
-        └── Analytics
+```text
+        Q-WAYS
+          |
+  |---------------|
+  |               |
+React Frontend  FastAPI Backend
+  |               |
+  ├─ Map & Routes ├─ QPSO Engine
+  ├─ Orders       ├─ Network Processing
+  ├─ Traffic      ├─ Constraints
+  ├─ Optimizer    └─ Results
+  └─ Analytics
+```
 
-Project Structure
+### Project Structure
 
+```text
 Q-Ways/
-│
-├── QPSO_Frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-├── QPSO_Backend/
-│   ├── graph/
-│   ├── optimization/
-│   ├── schemas/
-│   ├── services/
-│   ├── main.py
-│   └── requirements.txt
-│
-└── README.md
+|
+├─ QPSO_Frontend/
+|  ├─ src/
+|  ├─ public/
+|  └─ package.json
+|
+├─ QPSO_Backend/
+|  ├─ graph/
+|  ├─ optimization/
+|  ├─ schemas/
+|  ├─ services/
+|  ├─ main.py
+|  └─ requirements.txt
+|
+└─ README.md
+```
+
 
 Getting Started
 
