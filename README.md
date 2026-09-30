@@ -43,7 +43,7 @@ Key Features
 
 Tech Stack
 
-Frontend
+<strong>Frontend</strong>
 
 React
 
@@ -59,7 +59,7 @@ Zustand
 
 Recharts
 
-Backend
+<strong>Backend</strong>
 
 Python
 
